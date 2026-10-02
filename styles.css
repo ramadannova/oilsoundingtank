@@ -1,0 +1,55 @@
+*{box-sizing:border-box}body{margin:0;background:#202020;font-family:Arial,sans-serif;color:#111}.app{max-width:1660px;margin:auto;background:#eaf1ec;min-height:100vh}.top{height:82px;display:flex;background:#dbe8dd}.top-tab{flex:1;border:0;font-size:25px;font-weight:700;background:#dbe8dd}.top-tab.active{background:#f8fbf8;border-top:8px solid #2f7d32}main{padding:28px 7.5% 60px}.page-title,.tank-title{background:#2f7d32;color:#fff;text-align:center;font-weight:800;border-radius:12px}.page-title{font-size:36px;padding:18px}.tank-tabs{display:flex;gap:10px;margin-top:20px;align-items:flex-end}.tank-tab{min-width:115px;border:0;background:#dfe2e1;padding:17px 28px;font-size:21px;font-weight:bold;border-radius:12px 12px 0 0;cursor:pointer;color:#17201a}.tank-tab.active{background:#fff;border-top:7px solid #2f7d32;padding-top:10px;color:#1f6f2d}.card{background:#fff;border-radius:0 12px 12px 12px;padding:24px;box-shadow:0 2px 6px #bbb}.tank-title{font-size:28px;padding:15px}.panel{background:#fafafa;margin-top:24px;padding:25px;border-radius:8px}.panel h2,.tables h2{font-size:24px;margin:0 0 18px}.input-row{display:grid;grid-template-columns:280px 210px;gap:12px;align-items:center;margin:13px 0}.input-row label{font-size:19px;font-weight:700}input{height:44px;font-size:19px;padding:6px 10px;border:1px solid #999;border-radius:3px}input:focus{outline:3px solid #c7dfca;border-color:#2f7d32}.divider{height:1px;background:#ddd;margin:24px 0}.result-line{display:flex;align-items:center;font-size:19px;margin:11px 0}.green-bar{display:inline-block;width:9px;height:37px;background:#2f7d32;border-radius:5px;margin-right:10px}.sub{margin-top:30px!important}.calc-grid{display:grid;grid-template-columns:1fr 180px 80px;gap:9px;font-size:18px;align-items:center}.calc-grid b{text-align:right}.final-box{margin-top:18px;padding:14px 16px;background:#e3f0e5;border-left:8px solid #2f7d32;font-size:19px}.final-box strong{font-size:23px}.final{background:#d5e9d8;font-size:21px}.final strong{font-size:28px}.factor-row{text-align:right;margin-top:15px;font-size:18px;color:#28672c}.status{font-weight:bold;padding:10px;background:#eef6ef;border-left:5px solid #2f7d32}.table-scroll{max-height:430px;overflow:auto;border:1px solid #aaa}table{width:100%;border-collapse:collapse;background:#fff}th,td{border:1px solid #aaa;padding:8px 12px;text-align:right}th{position:sticky;top:0;background:#f1f1f1;text-align:center}@media(max-width:700px){main{padding:15px 10px}.page-title{font-size:25px}.tank-title{font-size:22px}.input-row{grid-template-columns:1fr}.calc-grid{grid-template-columns:1fr 120px 55px}.top-tab{font-size:17px}}
+/* History */
+.hidden{display:none!important}
+.history-title{margin-top:30px}.history-card{margin-top:0}
+.history-toolbar{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;background:#fafafa;padding:18px;border-radius:8px}
+.history-toolbar label{font-weight:700;margin-right:8px}
+.history-toolbar input{height:40px;font-size:16px}
+.history-actions{display:flex;gap:8px;flex-wrap:wrap}
+.secondary-btn,.danger-btn{border:0;padding:10px 14px;border-radius:6px;font-weight:700;cursor:pointer}
+.secondary-btn{background:#e3eee5;color:#205f25}
+.danger-btn{background:#f2dede;color:#9a2525}
+.history-summary{margin:18px 0;font-weight:700;color:#245f29}
+.history-table-wrap{max-height:600px;overflow:auto;border:1px solid #aaa}
+.history-table{min-width:1000px}
+.history-table th{white-space:nowrap}
+.history-table td{font-size:14px;vertical-align:middle}
+.history-delete{border:0;background:#f3dddd;color:#a12222;border-radius:5px;padding:6px 9px;cursor:pointer;font-weight:700}
+.history-date-heading{background:#e2efe4;font-weight:800;text-align:left!important;color:#205f25}
+@media(max-width:700px){.history-toolbar{align-items:flex-start}.history-actions{width:100%}}
+
+
+.history-save-area {
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:12px;
+  margin-top:14px;
+  padding-top:12px;
+  border-top:1px solid #d9e2dc;
+}
+
+.save-history-btn {
+  border:0;
+  border-radius:7px;
+  padding:10px 18px;
+  background:#287d34;
+  color:#fff;
+  font-weight:700;
+  cursor:pointer;
+  box-shadow:0 1px 2px rgba(0,0,0,.12);
+}
+
+.save-history-btn:hover { background:#21682b; }
+.save-history-btn:active { transform:translateY(1px); }
+
+.save-history-status {
+  min-height:18px;
+  font-size:12px;
+  color:#666;
+}
+
+.save-history-status.success {
+  color:#1f7a2d;
+  font-weight:700;
+}
